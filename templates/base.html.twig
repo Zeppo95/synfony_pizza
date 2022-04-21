@@ -23,6 +23,9 @@
             <i class="fa-solid fa-house"></i>
           </a>
         </div>
+        {% if app.user %}
+            <p style="color: #ffffff;">Bonjour, {{ app.user.firstname }} que pouvons-nous faire pour vous aujourd'hui ?<p>
+          {% endif %}
         <div class="header-right">
           <a href="#" title="mon panier">
             <i class="fa-solid fa-basket-shopping"></i>
@@ -40,7 +43,7 @@
          
 
             {% if is_granted("ROLE_ADMIN") %}
-            <a href="#">
+            <a href="#" title="Espace administration">
             <i class="fa-solid fa-toolbox"></i>
           </a>
              {% endif %}
