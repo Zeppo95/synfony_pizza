@@ -33,6 +33,7 @@ class UserController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             /** @var User */
             $user = $form->getData();
+            $user->setRoles(["ROLE_USER"]);
 
             // On crypte le mot de passe de l'utilisateur
             $user->setPassword($hasher->hashPassword($user, $user->getPassword()));

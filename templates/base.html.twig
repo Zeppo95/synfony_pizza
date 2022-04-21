@@ -24,12 +24,28 @@
           </a>
         </div>
         <div class="header-right">
-          <a href="">
+          <a href="#" title="mon panier">
             <i class="fa-solid fa-basket-shopping"></i>
           </a>
-          <a href="{{ path('app_frontend_user_profile') }}">
+          
+          {% if app.user %}
+           <a href="{{ path('app_frontend_user_logout') }}" title="Déconnexion">
+          <i class="fa-solid fa-user-large-slash"></i>
+          </a>
+          {% else %}            
+          <a href="{{ path('app_frontend_user_profile') }}" title="Connexion">
             <i class="fa-solid fa-user"></i>
           </a>
+          {% endif %}
+         
+
+            {% if is_granted("ROLE_ADMIN") %}
+            <a href="#">
+            <i class="fa-solid fa-toolbox"></i>
+          </a>
+             {% endif %}
+
+
         </div>
       </header>
 
