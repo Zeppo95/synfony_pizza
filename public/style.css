@@ -6,22 +6,27 @@ sans class. Contient les variables css.
 */
 :root {
   --base-font-size: 14px;
-  --color-white: #EFEFEF;
+  --color-white: #efefef;
   --color-black: #363636;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: var(--base-font-size);
 }
 h1 {
-  font-family: 'Lobster', sans-serif;
+  font-family: "Lobster", sans-serif;
   font-size: 2rem;
 }
-h2, h3, h4, h5, h6 {
-  font-family: 'Outfit';
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit";
 }
 .content {
   display: flex;
@@ -60,7 +65,7 @@ footer .logo {
 }
 footer .logo p {
   font-size: 3rem;
-  font-family: 'Lobster', sans-serif;
+  font-family: "Lobster", sans-serif;
   color: var(--color-white);
   margin-right: 2rem;
 }
@@ -75,7 +80,7 @@ footer .menu a {
   display: flex;
   color: var(--color-white);
   text-decoration: none;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   font-weight: bold;
 }
 
@@ -101,7 +106,7 @@ Bar de navigation du haut de page
 }
 .header a {
   display: flex;
-  margin: .6rem 1rem;
+  margin: 0.6rem 1rem;
   font-size: 1.7rem;
   color: var(--color-white);
   cursor: pointer;
@@ -117,7 +122,7 @@ HERO UNIT
 En tête de la page d'accueil
 */
 .hero {
-  min-height: 600px; 
+  min-height: 600px;
   background-color: var(--color-black);
   box-sizing: border-box;
   display: flex;
@@ -129,7 +134,7 @@ En tête de la page d'accueil
 }
 .hero-container {
   display: flex;
-  position: relative; 
+  position: relative;
   flex-direction: column;
   justify-content: center;
   z-index: 0;
@@ -179,14 +184,14 @@ Design d'une carte de pizza
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  padding: 0rem .6rem;
+  padding: 0rem 0.6rem;
   overflow: hidden;
   margin-bottom: 1.4rem;
 }
 .pizza-thumb-header {
   text-align: center;
   font-size: 3rem;
-  font-family: 'Lobster', sans-serif;
+  font-family: "Lobster", sans-serif;
   color: var(--color-white);
   margin-bottom: 1rem;
 }
@@ -202,7 +207,7 @@ Design d'une carte de pizza
   align-items: center;
 }
 .pizza-thumb-footer .price {
-  font-family: 'Lobster', sans-serif;
+  font-family: "Lobster", sans-serif;
   font-size: 3rem;
   color: var(--color-white);
 }
@@ -244,7 +249,7 @@ Design des boutons
   outline: none;
   border: none;
   align-items: center;
-} 
+}
 .btn i {
   display: flex;
   font-size: 2.2rem;
@@ -254,4 +259,32 @@ Design des boutons
   display: flex;
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+label {
+  padding: 12px 0 0 0;
+  display: inline-block;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 0;
 }
