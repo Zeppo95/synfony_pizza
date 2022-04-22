@@ -192,7 +192,7 @@
             "config/packages/stof_doctrine_extensions.yaml"
         ]
     },
-     "stripe/stripe-php": {
+    "stripe/stripe-php": {
         "version": "v7.125.0"
     },
     "symfony/apache-pack": {
@@ -584,9 +584,6 @@
     },
     "twig/extra-bundle": {
         "version": "v3.3.8"
-    },
-    "twig/intl-extra": {
-        "version": "v3.3.5"
     },
     "twig/twig": {
         "version": "v3.3.10"
