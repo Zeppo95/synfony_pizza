@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block content_class 'no-margin' %}
+{% block content %}
+
+{# On contrôle que l'utilisateur est administrateur #}
+{% if is_granted("ROLE_ADMIN") %}
+
+
+
+
+
+Accès admin
+            
+
+
+
+{# Si l'utilisateur n'est pas administrateur #}
+{% else %}
+
+ 
+
+<img style="margin: auto; padding: auto;" src="https://www.ma-boutique-en-lean.fr/3209-thickbox_default/interdit-aux-personnes-non-autorisees.jpg" alt="Accès interdit !" />
+
+
+{% endif %}
+{% endblock %}

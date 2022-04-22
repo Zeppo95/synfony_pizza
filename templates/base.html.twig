@@ -23,11 +23,11 @@
             <i class="fa-solid fa-house"></i>
           </a>
         </div>
-        {% if app.user %}
-            <p style="color: #ffffff;">Bonjour, {{ app.user.firstname }} que pouvons-nous faire pour vous aujourd'hui ?<p>
+        {% if app.user %}        
+            <p style="color: #ffffff; margin-top: 35px;">Bienvenue, {{ app.user.firstname }} que pouvons-nous faire pour vous aujourd'hui ?<p>
           {% endif %}
         <div class="header-right">
-          <a href="#" title="mon panier">
+          <a href="{{ path('app_frontend_cart_display') }}" title="mon panier">
             <i class="fa-solid fa-basket-shopping"></i>
           </a>
           
@@ -43,7 +43,7 @@
          
 
             {% if is_granted("ROLE_ADMIN") %}
-            <a href="#" title="Espace administration">
+            <a href="{{ path('app_backend_home_home') }}" title="Espace administration">
             <i class="fa-solid fa-toolbox"></i>
           </a>
              {% endif %}
